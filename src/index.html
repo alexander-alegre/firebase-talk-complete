@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Firebase Authentication</title>
+</head>
+<body>
+  <div>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="index.html" class="left brand-logo hide-on-sm-and-down">
+          <i class="material-icons" id="logo-icon">lock_outline</i>
+        </a>
+        <ul id="nav-mobile" class="right">
+          <!-- SIGN IN MODAL -->
+          <li>
+            <a class="waves-effect waves-light btn modal-trigger" href="#sign-in-modal">Sign In</a>
+            <div id="sign-in-modal" class="modal">
+              <div class="modal-content">
+                <h4 class="blue-text">Sign In</h4>
+                <div class="input-field inline">
+                  <input id="si-email" type="email" class="validate black-text">
+                  <label for="si-email" data-error="wrong" data-success="right">Email</label>
+                </div>
+                <div class="input-field inline">
+                  <input id="si-password" type="password" class="validate black-text">
+                  <label for="si-password" data-error="wrong" data-success="right">Password</label>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a id="si-btn" class="modal-action modal-close waves-effect waves-green btn-flat teal white-text">Sign In</a>
+              </div>
+            </div>
+          </li>
+            <!-- SIGN UP MODAL -->
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Sign Up</a>
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4 class="blue-text">Sign Up</h4>
+                <div class="input-field inline">
+                  <input id="su-name" type="text" class="validate black-text">
+                  <label for="su-name" data-error="wrong" data-success="right">Name</label>
+                </div>
+                <div class="input-field inline">
+                  <input id="su-email" type="email" class="validate black-text">
+                  <label for="su-email" data-error="wrong" data-success="right">Email</label>
+                </div>
+                <div class="input-field inline">
+                  <input id="su-password" type="password" class="validate black-text">
+                  <label for="su-password" data-error="wrong" data-success="right">Password</label>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a id="su-btn" class="modal-action modal-close waves-effect waves-green btn-flat teal white-text">Sign Up</a>
+              </div>
+            </div>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-messaging.js"></script>
+  <!-- Compiles and minified jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="./assets/app.js"></script>
+</body>
+</html>

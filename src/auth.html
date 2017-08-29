@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Firebase Authorized User</title>
+</head>
+<body>
+  <div>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="index.html" class="left brand-logo hide-on-sm-and-down">
+          <i class="material-icons" id="logo-icon">lock_open</i>
+        </a>
+        <ul id="nav-mobile" class="right">
+          <li>
+            <button id="sign-out" class="btn waves-effect waves-light" type="submit" name="action">Sign Out</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h4>You are logged in!</h4>
+  </div>
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-messaging.js"></script>
+  <!-- Compiles and minified jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="./assets/app.js"></script>
+</body>
+</html>
