@@ -12,7 +12,7 @@
 <body>
   <div>
     <nav>
-      <div class="nav-wrapper">
+      <div class="nav-wrapper container">
         <a href="index.html" class="left brand-logo hide-on-sm-and-down">
           <i class="material-icons" id="logo-icon">lock_outline</i>
         </a>
@@ -43,10 +43,6 @@
               <div class="modal-content">
                 <h4 class="blue-text">Sign Up</h4>
                 <div class="input-field inline">
-                  <input id="su-name" type="text" class="validate black-text">
-                  <label for="su-name" data-error="wrong" data-success="right">Name</label>
-                </div>
-                <div class="input-field inline">
                   <input id="su-email" type="email" class="validate black-text">
                   <label for="su-email" data-error="wrong" data-success="right">Email</label>
                 </div>
@@ -62,6 +58,53 @@
         </ul>
       </div>
     </nav>
+    <div class="col cards-container">
+    <!-- CARD 1 -->
+    <div class="row">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-image">
+            <img src="assets/images/pup.jpeg">
+            <span class="card-title blue-text">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>One reason to sign up!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 2 -->
+    <div class="row">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-image">
+            <img src="assets/images/turtle.jpeg">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>Another reason to sign up!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer</h5>
+            <p class="grey-text text-lighten-4">This page will only be seen if the user is not logged in</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © <span id="current-year"></span> Copyright Text
+          <a class="grey-text text-lighten-4 right" href="https://github.com/alexander-alegre/firebase-talk-complete" target="_blank">Get Code</a>
+        </div>
+      </div>
+    </footer>
   </div>
   <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
@@ -73,6 +116,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script src="./assets/app.js"></script>
+  <!-- custom js -->
+  <script src="./assets/js/app.js"></script>
 </body>
 </html>

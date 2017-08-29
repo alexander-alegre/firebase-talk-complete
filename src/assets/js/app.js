@@ -1,16 +1,24 @@
 $(document).ready(function() {
   // FIREBASE CONFIG
   var config = {
-
+    apiKey: 'AIzaSyD-r4wUfuLYmzPIzjYBCjFq8cYYlBX3exg',
+    authDomain: 'fir-auth-b8391.firebaseapp.com',
+    databaseURL: 'https://fir-auth-b8391.firebaseio.com',
+    projectId: 'fir-auth-b8391',
+    storageBucket: '',
+    messagingSenderId: '1005599541893'
   };
   // INITIALIZE FIREBASE
   firebase.initializeApp(config);
-  // CHECK IF USER IS SIGNED IN
+  // CHECK CURRENT PATH
   var currentPath = $(location)[0].pathname;
+  // CHECK IF USER IS SIGNED IN
   firebase.auth().onAuthStateChanged(function(user) {
-    if(user && currentPath === '/index.html') {
+    if(user && (currentPath === '/index.html' || currentPath === '/' )) {
+      // REDIRECT IF AUTHENTICATED
       $(location).attr('href', 'auth.html');
     } else if(!user && currentPath === '/auth.html') {
+      // REDIRECT IF NOT AUTHENTICATED
       $(location).attr('href', 'index.html');
     }
   });
@@ -54,5 +62,11 @@ $(document).ready(function() {
   ******************/
   // open modals
   $('.modal').modal();
+  // parallax
+  $('.parallax').parallax();
+  // change font size for icons
   $('#logo-icon').css('font-size', '40px');
+  // get current year
+  var currentYear = new Date().getFullYear();
+  $('#current-year').html(currentYear);
 });

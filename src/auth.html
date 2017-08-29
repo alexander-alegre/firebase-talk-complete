@@ -12,7 +12,7 @@
 <body>
   <div>
     <nav>
-      <div class="nav-wrapper">
+      <div class="nav-wrapper container">
         <a href="index.html" class="left brand-logo hide-on-sm-and-down">
           <i class="material-icons" id="logo-icon">lock_open</i>
         </a>
@@ -23,7 +23,38 @@
         </ul>
       </div>
     </nav>
-    <h4>You are logged in!</h4>
+    <!-- PARALLAX -->
+    <div class="parallax-container">
+      <div class="parallax"><img src="assets/images/water.jpeg"></div>
+    </div>
+    <!-- CONTENT -->
+    <div class="section white">
+      <div class="row container">
+        <h2 class="header">Parallax</h2>
+        <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground
+          content while scrolling.</p>
+      </div>
+    </div>
+    <!-- PARALLAX -->
+    <div class="parallax-container">
+      <div class="parallax"><img src="assets/images/mountain.jpeg"></div>
+    </div>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">This page will only be seen by authenticated users.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © <span id="current-year"></span> Copyright Text
+          <a class="grey-text text-lighten-4 right" href="https://github.com/alexander-alegre/firebase-talk-complete" target="_blank">Get Code</a>
+        </div>
+      </div>
+    </footer>
   </div>
   <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
@@ -35,6 +66,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script src="./assets/app.js"></script>
+  <!-- custom js -->
+  <script src="./assets/js/app.js"></script>
 </body>
 </html>
