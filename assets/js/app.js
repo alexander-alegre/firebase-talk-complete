@@ -28,8 +28,7 @@ $(document).ready(function() {
     var password = $('#si-password').val().trim();
     if(email && password) {
       // ADD USER TO DATABASE
-      firebase.auth().signInWithEmailAndPassword(email, password)
-        .then(function() {
+      firebase.auth().signInWithEmailAndPassword(email, password).then(function() {
           $(location).attr('href', 'auth.html');
         }).catch(function(error) {
           alert(error.message);
@@ -40,8 +39,7 @@ $(document).ready(function() {
   $('#su-btn').on('click', function() {
     var email = $('#su-email').val();
     var password = $('#su-password').val();
-    firebase.auth().createUserWithEmailAndPassword(email, password)
-      .then(function() {
+    firebase.auth().createUserWithEmailAndPassword(email, password).then(function() {
         $(location).attr('href', 'auth.html');
       }).catch(function(error) {
         alert(error.message);
@@ -49,8 +47,7 @@ $(document).ready(function() {
   });
   // SIGN OUT THE USER
   $('#sign-out').on('click', function() {
-    firebase.auth().signOut()
-      .then(function() {
+    firebase.auth().signOut().then(function() {
         $(location).attr('href', 'index.html');
       }).catch(function(error) {
         alert(error.message);
