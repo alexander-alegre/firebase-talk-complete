@@ -1,5 +1,7 @@
+[LIVE SITE](https://ua-firebase.herokuapp.com/index.html)
+
 # Instructions
-1. Download started project from GitHub :octocat:
+1. Download starter project from GitHub :octocat:
 
 > git clone https://github.com/alexander-alegre/firebase-talk-starter my-new-app
 
